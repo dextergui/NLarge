@@ -498,8 +498,8 @@ pipeline_augmented_200.plot_acc(title="LSTM - LLM Summarizer Augment (200%)")
               }}
             />
             <Group justify="center">
-              <Image src="/graphs/lstm_summarize_5_loss.png" />
-              <Image src="/graphs/lstm_summarize_200_loss.png" />
+              <Image src="/graphs/lstm_summarize_5_loss.png" alt="LSTM Summarizer 5% Augmentation Loss Graph" />
+              <Image src="/graphs/lstm_summarize_200_loss.png" alt="LSTM Summarizer 200% Augmentation Loss Graph" />
             </Group>
 
             <Text c="primary" size="md">
@@ -512,8 +512,8 @@ pipeline_augmented_200.plot_acc(title="LSTM - LLM Summarizer Augment (200%)")
               }}
             />
             <Group justify="center">
-              <Image src="/graphs/lstm_summarize_5_acc.png" />
-              <Image src="/graphs/lstm_summarize_200_acc.png" />
+              <Image src="/graphs/lstm_summarize_5_acc.png" alt="LSTM Summarizer 5% Augmentation Accuracy Graph" />
+              <Image src="/graphs/lstm_summarize_200_acc.png" alt="LSTM Summarizer 200% Augmentation Accuracy Graph" />
             </Group>
 
             <Divider my={2} />

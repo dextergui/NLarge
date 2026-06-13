@@ -675,13 +675,13 @@ pipeline_augmented_100.plot_acc(title="100% Random Substitute on RNN")
             <Text c="primary" size="md">
               Models&apos; Loss
             </Text>
-            <Image src="/graphs/rnn_random_sub_10_loss.png" />
-            <Image src="/graphs/rnn_random_sub_100_loss.png" />
+            <Image src="/graphs/rnn_random_sub_10_loss.png" alt="RNN Random Substitute 10% Augmentation Loss Graph" />
+            <Image src="/graphs/rnn_random_sub_100_loss.png" alt="RNN Random Substitute 100% Augmentation Loss Graph" />
             <Text c="primary" size="md">
               Models&apos; Accuracy
             </Text>
-            <Image src="/graphs/rnn_random_sub_10_acc.png" />
-            <Image src="/graphs/rnn_random_sub_100_acc.png" />
+            <Image src="/graphs/rnn_random_sub_10_acc.png" alt="RNN Random Substitute 10% Augmentation Accuracy Graph" />
+            <Image src="/graphs/rnn_random_sub_100_acc.png" alt="RNN Random Substitute 100% Augmentation Accuracy Graph" />
 
             <Divider my={2} />
 
@@ -767,13 +767,13 @@ pipeline_augmented_100_LSTM.plot_acc(title="100% Random Substitute on LSTM")
             <Text c="primary" size="md">
               Models&apos; Loss
             </Text>
-            <Image src="/graphs/lstm_random_sub_10_loss.png" />
-            <Image src="/graphs/lstm_random_sub_100_loss.png" />
+            <Image src="/graphs/lstm_random_sub_10_loss.png" alt="LSTM Random Substitute 10% Augmentation Loss Graph" />
+            <Image src="/graphs/lstm_random_sub_100_loss.png" alt="LSTM Random Substitute 100% Augmentation Loss Graph" />
             <Text c="primary" size="md">
               Models&apos; Accuracy
             </Text>
-            <Image src="/graphs/lstm_random_sub_10_acc.png" />
-            <Image src="/graphs/lstm_random_sub_100_acc.png" />
+            <Image src="/graphs/lstm_random_sub_10_acc.png" alt="LSTM Random Substitute 10% Augmentation Accuracy Graph" />
+            <Image src="/graphs/lstm_random_sub_100_acc.png" alt="LSTM Random Substitute 100% Augmentation Accuracy Graph" />
 
             <Text c="primary" size="lg" fw="bolder">
               Analysis of Results

@@ -440,8 +440,8 @@ pipeline_augmented_10.plot_acc(title="10% Synonym Augment on LSTM")
               }}
             />
             <Group justify="center">
-              <Image src="/graphs/lstm_synonym_5_loss.png" />
-              <Image src="/graphs/lstm_synonym_10_loss.png" />
+              <Image src="/graphs/lstm_synonym_5_loss.png" alt="LSTM Synonym 5% Augmentation Loss Graph" />
+              <Image src="/graphs/lstm_synonym_10_loss.png" alt="LSTM Synonym 10% Augmentation Loss Graph" />
             </Group>
 
             <Text c="primary" size="md">
@@ -454,8 +454,8 @@ pipeline_augmented_10.plot_acc(title="10% Synonym Augment on LSTM")
               }}
             />
             <Group justify="center">
-              <Image src="/graphs/lstm_synonym_5_acc.png" />
-              <Image src="/graphs/lstm_synonym_10_acc.png" />
+              <Image src="/graphs/lstm_synonym_5_acc.png" alt="LSTM Synonym 5% Augmentation Accuracy Graph" />
+              <Image src="/graphs/lstm_synonym_10_acc.png" alt="LSTM Synonym 10% Augmentation Accuracy Graph" />
             </Group>
 
             <Divider my={2} />
