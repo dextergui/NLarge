@@ -15,7 +15,7 @@ export default function DocumentationModel() {
     <>
       <AppShellSection className="pt-10" bg="bg2">
         <Group justify="center">
-          <Stack className="w-3/4 p-2 pb-10">
+          <Stack className="w-full md:w-3/4 p-4 md:p-2 pb-10">
             <Title
               c="primary"
               ff="monospace"
@@ -36,7 +36,7 @@ export default function DocumentationModel() {
       </AppShellSection>
       <AppShellSection className="pb-10">
         <Group justify="center">
-          <Group className="w-2/3">
+          <Group className="w-full md:w-2/3">
             <Stack>
               <Text c="primary" size="lg" fw="bolder">
                 Ready-to-Use Models

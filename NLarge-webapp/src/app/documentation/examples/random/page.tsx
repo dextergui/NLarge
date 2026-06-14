@@ -104,7 +104,7 @@ export default function ExampleRandom() {
     <>
       <AppShellSection className="pt-10" bg="bg2">
         <Group justify="center">
-          <Stack className="w-3/4 p-2 pb-10">
+          <Stack className="w-full md:w-3/4 p-4 md:p-2 pb-10">
             <Title
               c="primary"
               ff="monospace"
@@ -124,8 +124,8 @@ export default function ExampleRandom() {
         <Divider my="lg" />
       </AppShellSection>
       <AppShellSection className="flex justify-center pb-10">
-        <div className="max-w-screen-lg  w-full flex space-x-8 ml-16">
-          <Stack className="w-2/3">
+        <div className="max-w-screen-lg w-full flex flex-col md:flex-row space-x-0 md:space-x-8 ml-4 md:ml-16 mr-4 md:mr-0">
+          <Stack className="w-full md:w-2/3">
             <Text c="primary" size="lg" fw="bolder">
               Introduction
             </Text>
@@ -807,7 +807,7 @@ pipeline_augmented_100_LSTM.plot_acc(title="100% Random Substitute on LSTM")
             <Divider my={2} />
           </Stack>
 
-          <div className={clsx(classes.root, "w-1/4 sticky top-8")}>
+          <div className={clsx(classes.root, "hidden md:block w-1/4 sticky top-8")}>
             <Group mb="md">
               <IconListSearch
                 style={{ width: rem(18), height: rem(18) }}

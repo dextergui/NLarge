@@ -19,7 +19,7 @@ export function NavBar() {
   });
   const isDark = colorScheme === "dark";
   return (
-    <Group className="h-full px-16 justify-between">
+    <Group className="h-full px-4 md:px-16 justify-between">
       <Anchor href="/" underline="never">
         <Group className="w-auto dark:fill-blue transform transition-transform duration-300 hover:scale-105">
           <Logo

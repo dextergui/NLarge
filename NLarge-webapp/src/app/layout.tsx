@@ -1,4 +1,3 @@
-"use client";
 import {
   AppShell,
   AppShellHeader,
@@ -13,6 +12,7 @@ import {
 import localFont from "next/font/local";
 import "./globals.css";
 import { NavBar } from "@/components/navbar";
+import { Metadata } from "next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -238,6 +238,16 @@ const theme = mergeMantineTheme(
     primaryColor: "secondary",
   }),
 );
+
+export const metadata: Metadata = {
+  title: 'NLarge | NLP Date Augmentation Tool',
+  description: 'A data augmentation utility tool for your datasets to enhance model performance',
+  openGraph: {
+    title: 'NLarge | NLP Date Augmentation Tool',
+    description: 'A data augmentation utility tool for your datasets to enhance model performance',
+    images: [{ url: '/logo.svg', width: 1024, height: 1024, alt: 'NLarge Logo' }],
+  },
+};
 
 export default function RootLayout({
   children,

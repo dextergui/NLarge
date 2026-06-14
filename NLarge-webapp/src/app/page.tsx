@@ -104,10 +104,10 @@ export default function Home() {
 
   return (
     <>
-      <AppShellMain className="px-24 min-h-[90vh] max-h-[95vh] flex flex-col justify-between">
-        <div className="flex justify-between">
-          <Box className="max-w-4xl min-w-3xl pt-md">
-            <Title className="text-left mt-16">
+      <AppShellMain className="px-4 md:px-24 min-h-[90vh] md:max-h-[95vh] flex flex-col justify-between overflow-x-hidden">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start">
+          <Box className="max-w-4xl w-full pt-md text-center md:text-left flex flex-col items-center md:items-start">
+            <Title className="text-center md:text-left mt-8 md:mt-16">
               <Text
                 inherit
                 variant="gradient"
@@ -124,7 +124,7 @@ export default function Home() {
               className="max-w-[500px] mt-xl"
               ff="monospace"
               c="dimmed"
-              ta="left"
+              ta={{ base: "center", md: "left" }}
               size="md"
               maw={780}
               mt="xl"
@@ -134,7 +134,7 @@ export default function Home() {
               with proven methods to improve your model. To get started,
             </Text>
 
-            <div className="mt-10 gap-5">
+            <div className="mt-10 gap-5 text-center md:text-left">
               <Link href="/documentation">
                 <Button
                   className="transform transition-transform duration-300 hover:scale-110"
@@ -147,13 +147,15 @@ export default function Home() {
               </Link>
             </div>
           </Box>
-          <Box className="pt-44 pr-14">
-            <Logo
-              width="550"
-              height="550"
-              stroke="4"
-              color={isDark ? "#D0BCFF" : "#7363AD"}
-            />
+          <Box className="pt-10 md:pt-44 pr-0 md:pr-14 flex justify-center w-full md:w-auto">
+            <div className="w-full max-w-[300px] md:max-w-[550px]">
+              <Logo
+                width="100%"
+                height="100%"
+                stroke="4"
+                color={isDark ? "#D0BCFF" : "#7363AD"}
+              />
+            </div>
           </Box>
         </div>
         <Stack pb="sm" align="center" justify="center" gap="xs" c="primary">
@@ -163,12 +165,12 @@ export default function Home() {
           <ArrowDownIcon />
         </Stack>
       </AppShellMain>
-      <AppShellSection bg="bg2" className="px-24 py-8">
-        <Group align="start" justify="space-between">
-          <Box className="w-[65%]">
+      <AppShellSection bg="bg2" className="px-4 md:px-24 py-8">
+        <div className="flex flex-col md:flex-row items-start justify-between">
+          <Box className="w-full md:w-[65%]">
             <Documentation sectionsRefs={sectionsRefs} />
           </Box>
-          <div className={classes.root}>
+          <div className={clsx(classes.root, "hidden md:block")}>
             <Group mb="md">
               <IconListSearch
                 style={{ width: rem(18), height: rem(18) }}
@@ -186,11 +188,11 @@ export default function Home() {
               {items}
             </div>
           </div>
-        </Group>
+        </div>
       </AppShellSection>
       <AppShellSection>
         <Divider mb="sm" />
-        <Group justify="space-between" className="px-16 py-4">
+        <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-16 py-4 space-y-4 md:space-y-0 text-center md:text-left">
           <Text ff="monospace" c="dimmed" size="sm">
             © 2024 NLarge. All rights reserved
           </Text>
@@ -198,7 +200,7 @@ export default function Home() {
             Created as part of Nanyang Technological University: SC4001 Neural
             Network & Deep Learning
           </Text>
-        </Group>
+        </div>
       </AppShellSection>
     </>
   );
